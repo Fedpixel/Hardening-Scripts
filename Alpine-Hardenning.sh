@@ -12,6 +12,7 @@ read non_root_user
 echo "You choosed to name the non-root user $non_root_user"
 
 # Create non root user
+addgroup $non_root_user
 adduser -G $non_root_user $non_root_user
 addgroup -S $non_root_user wheel
 
